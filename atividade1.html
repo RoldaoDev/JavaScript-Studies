@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Atividade 1 </title>
+    <title>Document </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Atividade 1</h1>
     <script>
-        var idade = parseInt(prompt( 'Informe sua idade: '));
-        if (idade >= 18) {
-            console.log ('Você é maior de idade')
-        } else{
-            console.log ('Você é menor de idade')
+     var hora = 8
+     var minutos = 20    var total_entrevistados = 0
+     const saida = 11
+
+     var entrevistados = [
+        'Joaõ Mariano',
+        'Adélia de Souza',
+        'Fábio Almeida',
+        'Carla Silva',
+        'Paulo Arruda',
+        'Leonardo Rocha',
+        'Tiago de Lima',
+        "Patrícia de Lima",
+        'Fernanda Brito',
+        'Maria da Conceição',
+     ]
+
+     entrevistados.sort(); //Ordenando os estrevistados alfabeticamente
+
+     for (i = hora; i <= saida; i = i + 1) {
+        if ((i == 12) || (i == 13)) {
+            continue
         }
+        for (j = 0; j < 60; j = j + minutos) {
+            total_entrevistados++;
+            if (j == 0){
+                console.log(i + ':' + j "0", ':', entrevistados[total_entrevistados-1])
+            }
+            else {
+                console.log(i + ':' + j, ':', entrevistados[total_entrevistados - 1])
+            }
+        }
+     }
     </script>
 </body>
 </html>
