@@ -7,7 +7,7 @@ var x = 0;
 var y = 0;
 var altura = 10;
 var largura = 0;
-var fator = 60;
+var fator = 5;
 var resolucao = 1280;
 
 //cor da barra requisitada pela equipe
@@ -21,6 +21,8 @@ function animacao(){
     //                  para evitar carregamento excessivo
 
     if(largura > resolucao){
-        clearInterval(atualiza)
-    }
+        clearInterval(atualiza);
+    }    
 }
+//Atualiza a barra a cada 10 milisegundos
+var atualiza = setInterval(animacao,10)
