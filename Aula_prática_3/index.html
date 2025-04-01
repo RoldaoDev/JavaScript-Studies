@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jokenpô</h1>
+    <div class="choices">
+        <div class="choice" onclick="play('pedra')">🪨 Pedra</div>
+        <div class="choice" onclick="play('papel')">📜 Papel</div>
+        <div class="choice" onclick="play('tesoura')">✂️ Tesoura</div>
+    </div>
+    <div id="result"></div>
+    <button id="restart" onclick="restartGame()">Reiniciar</button>
+    <script src="script.js"></script>
+</body>
+</html>
